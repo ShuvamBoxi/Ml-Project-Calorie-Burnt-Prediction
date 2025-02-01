@@ -10,7 +10,7 @@ def calculate_heart_rate(exercise_name, duration_time):
         "Yoga": 80,
         "Strength Training": 130
     }
-    return exercise_hr.get(exercise_name, 100) + (duration * 0.5)
+    return exercise_hr.get(exercise_name, 100) + (duration_time * 0.5)
 
 def calculate_body_temp(exercise_name, duration_time):
     exercise_temp = {
@@ -21,7 +21,7 @@ def calculate_body_temp(exercise_name, duration_time):
         "Yoga": 37.3,
         "Strength Training": 38.0
     }
-    return exercise_temp.get(exercise, 37.5) + (duration_time * 0.02)
+    return exercise_temp.get(exercise_name, 37.5) + (duration_time * 0.02)
 
 #set the page configuration and title
 st.set_page_config(page_title="Calorie Burnt Prediction", page_icon="🏃")
